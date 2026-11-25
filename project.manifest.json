@@ -1,5 +1,13 @@
 {
   "formatVersion": 4,
   "name": "精灵球游戏卡收纳盒",
+  "title": "Square Poké Ball-Style Switch Game Card Case",
+  "summary": "A square Switch game card case designed in a Poké Ball-inspired color scheme, keeping your game cards organized and easy to carry.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "QY G"
+    }
+  ],
   "artifacts": "rebuild"
 }

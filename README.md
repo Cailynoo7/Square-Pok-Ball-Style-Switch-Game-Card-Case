@@ -1,17 +1,18 @@
-# 精灵球配色 Switch 游戏卡收纳盒
+A 68×68×68mm rounded-edge cube with 14 card slots arranged in two columns of 7. The top shell is red, the bottom shell is white, and the inner tray and waistline are black, with a gray push-to-unlock button.
 
-68×68×68mm圆角正立方体，14张卡、两列各7槽。红色上壳、白色下壳、黑色内胆与腰线、灰色按压解锁按钮。
+The red and white sections are each 30mm tall, the black waistline is 8mm, and the black inner tray seam is 0.3mm.
 
-- 红白各高30mm，黑色腰线8mm，黑胆合缝0.3mm。
-- 红壳顶边和白壳底边R6；主体壁厚2.4mm。
-- 下槽整体后移1.5mm，上盖左右两个21.8×43.7mm直壁长腔。
-- 灰按钮直径13mm、面帽厚1.6mm；白环外径19mm；外黑圆座直径24mm。
-- 共7件打印件，另用一段1.75mm PETG耗材作铰链轴，无电子元件和螺丝。
+The top edge of the red shell and the bottom edge of the white shell have an R6 fillet; the main body wall thickness is 2.4mm.
 
-## 制作
+The lower slot assembly is offset rearward by 1.5mm; the top cover has two straight-walled long cavities measuring 21.8×43.7mm on the left and right.
 
-先按[材料清单](product/materials.md)准备耗材，按[首件试装清单](product/first-article-checklist.md)先干装、后胶合。[零件与材料表](product/bom.json)与[CSV](product/bom.csv)包含装配件及可搜索的耗材选型；外包打印时不必同时购买整卷耗材。
+The gray button has a diameter of 13mm and a face cap thickness of 1.6mm; the white ring has an outer diameter of 19mm; the outer black circular seat has a diameter of 24mm.
 
-CAD源码在`design/cube/source`，装配说明在`design/assembly.json`。在Makit打开项目后，设计标签页的 **Export** 可生成 **STL** 或 **3MF**；只选7件打印件，游戏卡参考包络和耗材轴不打印。无需多色打印机，各零件分色打印后装配。
+There are 7 printed parts in total, plus a section of 1.75mm PETG filament used as the hinge pin. No electronic components or screws.
 
-几何检查通过不等于实体耐久验证。首件需检查按压力、回弹、装卡、胶合与开合。上传的外观参考图标记为本地私有素材，未纳入Git；CAD重建不依赖此图。图库封面为渲染展示，制造以CAD源和检查记录为准。
+Fabrication
+First prepare consumables according to the materials list, and follow the first-article trial assembly checklist to dry-fit first and glue afterward. The parts and materials table and CSV include assembly parts and searchable consumable selections; when outsourcing printing, you do not need to purchase full spools of filament.
+
+The CAD source is in design/cube/source, and assembly instructions are in design/assembly.json. After opening the project in Makit, the Export option on the Design tab can generate STL or 3MF; select only the 7 printed parts — the game card reference envelope and filament spool are not printed. A multi-color printer is not required; print each part in its own color and assemble afterward.
+
+Passing geometric checks does not equal physical durability validation. The first article needs to be checked for pressing force, rebound, card loading, gluing, and opening/closing. The uploaded appearance reference images are marked as local private assets and have not been included in Git; the CAD reconstruction does not depend on these images. The gallery cover is a rendered display; manufacturing is based on the CAD source and inspection records.
