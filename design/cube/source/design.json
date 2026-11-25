@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "units": "mm",
+  "coordinateFrame": "makit-world-z-up",
+  "targets": [
+    {
+      "id": "white_shell",
+      "label": "white_shell",
+      "cells": [
+        {
+          "id": "white_shell",
+          "target": "white_shell",
+          "order": 0,
+          "path": "design/cube/source/parts/white_shell/000-white_shell.py",
+          "sha256": "083444ca521ff77240776f47a13ebb2f58c57b6d884a5b051dcdd2f28679760d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "red_shell",
+      "label": "red_shell",
+      "cells": [
+        {
+          "id": "red_shell",
+          "target": "red_shell",
+          "order": 0,
+          "path": "design/cube/source/parts/red_shell/000-red_shell.py",
+          "sha256": "d4df6aa04f07a191459f11fb0be3ff4e811606a6d26efd7b41cf97f68bd0b213"
+        }
+      ],
+      "dependencies": [
+        "white_shell"
+      ]
+    },
+    {
+      "id": "lower_core",
+      "label": "lower_core",
+      "cells": [
+        {
+          "id": "lower_core",
+          "target": "lower_core",
+          "order": 0,
+          "path": "design/cube/source/parts/lower_core/000-lower_core.py",
+          "sha256": "c7a0d91dd54f8ff62c6372b3cdf57c33c083a67f9ae6f9eceaca50ba223c6d2a"
+        }
+      ],
+      "dependencies": [
+        "white_shell"
+      ]
+    },
+    {
+      "id": "upper_core",
+      "label": "upper_core",
+      "cells": [
+        {
+          "id": "upper_core",
+          "target": "upper_core",
+          "order": 0,
+          "path": "design/cube/source/parts/upper_core/000-upper_core.py",
+          "sha256": "fa88868ca7262401241fe172b33283c23bd1ff94d908eec9901e6b4991d50aa9"
+        }
+      ],
+      "dependencies": [
+        "lower_core",
+        "white_shell"
+      ]
+    },
+    {
+      "id": "latch",
+      "label": "latch",
+      "cells": [
+        {
+          "id": "latch",
+          "target": "latch",
+          "order": 0,
+          "path": "design/cube/source/parts/latch/000-latch.py",
+          "sha256": "1f2a101a0fd319538695d27dae25045087bd7d805d37baa803b9d5cd92d3281b"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "button",
+      "label": "button",
+      "cells": [
+        {
+          "id": "button",
+          "target": "button",
+          "order": 0,
+          "path": "design/cube/source/parts/button/000-button.py",
+          "sha256": "9b026c1ce76e30e8c472f14df29fc9b2272d7e9dce99130d948bed516a81297d"
+        }
+      ],
+      "dependencies": []
+    },
+    {
+      "id": "hinge_pin",
+      "label": "hinge_pin",
+      "cells": [
+        {
+          "id": "hinge_pin",
+          "target": "hinge_pin",
+          "order": 0,
+          "path": "design/cube/source/parts/hinge_pin/000-hinge_pin.py",
+          "sha256": "dc99c055762e6021558b86635f731aac77cbbfb3fa718c40baf530fbcf2dafa4"
+        }
+      ],
+      "dependencies": [
+        "lower_core"
+      ]
+    },
+    {
+      "id": "cards",
+      "label": "cards",
+      "cells": [
+        {
+          "id": "cards",
+          "target": "cards",
+          "order": 0,
+          "path": "design/cube/source/parts/cards/000-cards.py",
+          "sha256": "5bad1cf799aa3b331ce356a0d43e5e98ecbd8d07c493cd1e41163cca4e9dd092"
+        }
+      ],
+      "dependencies": [
+        "lower_core"
+      ]
+    },
+    {
+      "id": "white_ring",
+      "label": "white_ring",
+      "cells": [
+        {
+          "id": "white_ring",
+          "target": "white_ring",
+          "order": 0,
+          "path": "design/cube/source/parts/white_ring/000-white_ring.py",
+          "sha256": "5f7d407c54acb8b501bc7bcb9fb8eb80f1405c4121d83ea71fc1a123b8cb1d11"
+        }
+      ],
+      "dependencies": [
+        "lower_core",
+        "white_shell"
+      ]
+    }
+  ],
+  "objects": [
+    {
+      "id": "white",
+      "target": "white_shell",
+      "label": "白色下外壳",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "a57738cf32503feb29bee2749e2a527c42f9e93bd4ba4936d17c804cb1abbd16",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "red",
+      "target": "red_shell",
+      "label": "红色上外壳",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "b15fc001f2487cfb17ea4179d181b37515e76b0e9033ca53df5d6a03a8a4abd4",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          38
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "lower",
+      "target": "lower_core",
+      "label": "黑色下内胆",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "24059db5e95918898a8c321601275dd72d2b71bf0d8e4507badfed5864d91b0f",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "upper",
+      "target": "upper_core",
+      "label": "黑色上内胆",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "b243e67e3dde7dd3de0c027393afcea8d4b08736cdd6ba258b0002db05a55d62",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          34
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "latch",
+      "target": "latch",
+      "label": "黑色弹性锁舌",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "8653d2b6ba2f28f18669d3aecb084bd2faf30022e6bfe156b235b8f89b988c1b",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "button",
+      "target": "button",
+      "label": "灰色释放按钮",
+      "material": "petg",
+      "kind": "generated",
+      "shapeHash": "f0dcb1833ddef5836c19038f66fbe1d3b030c0bde3c99084f2312d863d4c4151",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "pin",
+      "target": "hinge_pin",
+      "label": "耗材铰链轴",
+      "material": "petg",
+      "role": "fastener",
+      "kind": "generated",
+      "shapeHash": "58bd618452b53765be2859448044d410a0f7f6715d9be5731e415a03b8cc7126",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "cards",
+      "target": "cards",
+      "label": "14张游戏卡包络",
+      "role": "reference",
+      "kind": "generated",
+      "shapeHash": "ba84332bc2a69531cd9fbe072f30e9fe81b4350d9bb8bc440d2ca2f987ac4489",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    },
+    {
+      "id": "white_ring",
+      "target": "white_ring",
+      "label": "白色按钮环",
+      "material": "pla",
+      "kind": "generated",
+      "shapeHash": "dd34f3bab88174b25a4804513b6f1e3c33091699f17443cb837780a3488f103a",
+      "transform": {
+        "positionMm": [
+          0,
+          0,
+          0
+        ],
+        "rotationDeg": [
+          0,
+          0,
+          0
+        ],
+        "rotationOrder": "XYZ",
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "datums": []
+    }
+  ],
+  "assets": [],
+  "fits": [],
+  "updatedAt": "2026-11-25T03:19:48.080Z",
+  "parameters": {
+    "white_shell": {
+      "case_size": 68,
+      "colour_height": 30,
+      "shell_wall": 2.4,
+      "corner_radius": 7,
+      "edge_radius": 6,
+      "button_surround_clearance_radius": 12.5
+    },
+    "red_shell": {
+      "red_height": 30
+    },
+    "lower_core": {
+      "carrier_width": 62.6,
+      "slot_floor_z": 14,
+      "slot_width": 21.8,
+      "slot_thickness": 3.8,
+      "slot_pitch": 6.4,
+      "column_offset": 13,
+      "base_top_z": 33.85,
+      "band_bottom_z": 30,
+      "hinge_y": 31,
+      "hinge_z": 34,
+      "hinge_radius": 3,
+      "hinge_bore": 2.15,
+      "bezel_radius": 12,
+      "button_hole_radius": 6.8,
+      "black_band_inset": 0.8,
+      "slots_rearward_shift": 1.5,
+      "bezel_depth": 2.3,
+      "white_ring_seat_depth": 0.4,
+      "white_ring_seat_radius": 9.7
+    },
+    "upper_core": {
+      "upper_sleeve_height": 31.3,
+      "upper_pocket_height": 11.6,
+      "upper_deck_thickness": 2.4,
+      "upper_front_relief": 1.3
+    },
+    "latch": {
+      "latch_width": 10,
+      "latch_thickness": 1.2,
+      "latch_root_z": 11.2,
+      "latch_hook_z": 36.3,
+      "leaf_y": -27.8,
+      "hook_reach": 2
+    },
+    "button": {
+      "button_radius": 6.5,
+      "button_cap_thickness": 1.6,
+      "button_stem_radius": 1.6,
+      "button_flange_radius": 11,
+      "release_stroke": 1.8
+    },
+    "hinge_pin": {
+      "filament_diameter": 1.75,
+      "pin_length": 54
+    },
+    "cards": {
+      "card_envelope_width": 21.2,
+      "card_envelope_thickness": 3.3,
+      "card_envelope_height": 31.2
+    },
+    "white_ring": {
+      "white_ring_outer_diameter": 19,
+      "white_ring_thickness": 1.2,
+      "white_ring_edge_radius": 0.2
+    }
+  }
+}

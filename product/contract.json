@@ -1,0 +1,73 @@
+{
+  "version": 2,
+  "artifact_level": "assembly",
+  "deliverable_intent": "printable_part",
+  "summary": "68mm正立方体精灵球配色14卡收纳盒，按压释放翻盖，黑胆一体卡槽。",
+  "required_interfaces": [
+    {
+      "id": "card_slots",
+      "kind": "internal_fit",
+      "description": "2×7等距卡槽，上下黑胆共同容纳14张卡",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "hinge",
+      "kind": "mechanical",
+      "description": "后侧翻盖铰链",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "push_latch",
+      "kind": "mechanical",
+      "description": "前面灰色圆按钮按压解锁",
+      "source": "user_requested",
+      "required": true
+    },
+    {
+      "id": "shell_carrier",
+      "kind": "mechanical",
+      "description": "红白结构外壳与内缩黑胆配合",
+      "source": "user_requested",
+      "required": true
+    }
+  ],
+  "external_references": [
+    {
+      "id": "user_image",
+      "source": "user_requested",
+      "description": "用户配色图片，比例必须改为正立方体",
+      "path": "product/references/uploads/20261124T082604258Z-1-20261124162137-591-3.png"
+    }
+  ],
+  "assembly_story": {
+    "installation": "灰按钮与黑胆锁舌配合，插轴装合上下黑胆，再将红白结构杯胶合到对应内胆。",
+    "maintenance": "拔出耗材轴可分离上下半，胶合外壳非日常拆卸。",
+    "user_access": [
+      "按压灰按钮后手动上翻红盖",
+      "14个独立游戏卡槽"
+    ]
+  },
+  "cad": {
+    "requirement": "required",
+    "designs": [
+      {
+        "role": "enclosure",
+        "design_id": "cube",
+        "description": "14卡立方体收纳盒装配",
+        "delivery_target": "printable_part",
+        "interface_ids": [
+          "card_slots",
+          "hinge",
+          "push_latch",
+          "shell_carrier"
+        ],
+        "reference_ids": [
+          "user_image"
+        ]
+      }
+    ]
+  },
+  "open_questions": []
+}

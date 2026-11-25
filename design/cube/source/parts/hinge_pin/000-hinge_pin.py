@@ -1,0 +1,6 @@
+b=part("lower_core")
+diameter=param("filament_diameter",1.75)
+length=param("pin_length",54.0)
+pin=Pos(0,b.hinge_y,b.hinge_z)*Rot(0,90,0)*Cylinder(diameter/2,length)
+pin.color=srgb("#17191c")
+publish("pin",pin,"耗材铰链轴",material="petg",role="fastener")

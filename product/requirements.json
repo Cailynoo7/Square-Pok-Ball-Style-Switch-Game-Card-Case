@@ -1,0 +1,201 @@
+{
+  "requirements": {
+    "product_class": {
+      "value": "mechanical",
+      "source": "user"
+    },
+    "form_factor": {
+      "value": "正立方体游戏卡收纳盒，红白等高、黑色中缝、灰色圆形按钮",
+      "source": "user"
+    },
+    "design_direction": {
+      "value": "等边圆角立方体，红白对称、略凸出黑腰线；黑圆座与黑前沿齐平，细白环与白壳齐平，缩小减薄的灰按钮，外露黑环适度收窄",
+      "source": "user"
+    },
+    "capacity": {
+      "value": {
+        "columns": 2,
+        "slots_per_column": 7,
+        "total_cards": 14,
+        "equal_pitch": true
+      },
+      "source": "user"
+    },
+    "slot_architecture": {
+      "value": "下盒2列×7个独立槽整体向后移动一点；上内胆保留左右两个直壁完整长腔，取消弧形退让，保留原露卡高度",
+      "source": "user"
+    },
+    "opening": {
+      "value": "按压前方灰色圆形按钮解锁，红色盖沿后侧铰链向上翻开",
+      "source": "user"
+    },
+    "inner_architecture": {
+      "value": "上下两件黑色内胆各自与其外露黑边及槽结构一体；隐蔽外缘内缩，给红白独立外壳留厚度",
+      "source": "user"
+    },
+    "case_size_mm": {
+      "value": {
+        "x": 68,
+        "y": 68,
+        "z": 68
+      },
+      "source": "default"
+    },
+    "colour_heights_mm": {
+      "value": {
+        "red": 30,
+        "black": 8,
+        "white": 30
+      },
+      "source": "default"
+    },
+    "card_design_envelope_mm": {
+      "value": {
+        "height": 31.2,
+        "width": 21.2,
+        "thickness": 3.3
+      },
+      "source": "default"
+    },
+    "card_nominal_mm": {
+      "value": {
+        "height": 31,
+        "width": 21,
+        "thickness": 3
+      },
+      "source": "research"
+    },
+    "slot_size_mm": {
+      "value": {
+        "width": 21.8,
+        "thickness": 3.8,
+        "pitch": 6.4,
+        "lower_depth": 19.85,
+        "upper_depth": 11.6
+      },
+      "source": "default"
+    },
+    "manufacturing_method": {
+      "value": "FDM分色打印；首件黑色上下内胆与锁舌、灰按钮使用PETG；红白外壳与白环使用PLA；无需电子元件",
+      "source": "default"
+    },
+    "shell_wall_mm": {
+      "value": 2.4,
+      "source": "default"
+    },
+    "hinge": {
+      "value": "隐藏式打印轴节，使用一段直径1.75mm耗材作铰链轴",
+      "source": "default"
+    },
+    "closure_implementation": {
+      "value": "黑色PETG弹性锁舌，灰色按钮推动脱扣；解锁后手动上翻，不承诺自动弹盖",
+      "source": "default"
+    },
+    "lid_clearance": {
+      "value": "取消上腔前缘弧形退让，改为下方两列槽整体后移，为满卡翻盖留出前方空间",
+      "source": "user"
+    },
+    "usable_opening_deg": {
+      "value": 100,
+      "source": "default"
+    },
+    "shell_proud_of_black": {
+      "value": "红白外壳略微凸出外露黑色内胆",
+      "source": "user"
+    },
+    "button_appearance": {
+      "value": "灰按钮和白圈直径缩小、白圈环带收窄、灰键减薄；外围黑色圆环略收小；保持黑圆座与黑前沿齐平、白环与白壳齐平",
+      "source": "user"
+    },
+    "black_band_inset_mm": {
+      "value": 0.8,
+      "source": "default"
+    },
+    "button_dimensions_mm": {
+      "value": {
+        "diameter": 13,
+        "cap_thickness": 1.6,
+        "projection_from_shell": 1.0
+      },
+      "source": "default"
+    },
+    "white_ring_mm": {
+      "value": {
+        "outer_diameter": 19,
+        "inner_diameter": 13.6,
+        "thickness": 1.2,
+        "band_width": 2.7
+      },
+      "source": "default"
+    },
+    "lid_front_relief_mm": {
+      "value": 0,
+      "source": "user"
+    },
+    "lower_slots_rearward_shift": {
+      "value": "下方两列全部卡槽整体向后移动",
+      "source": "user"
+    },
+    "lower_slots_rearward_shift_mm": {
+      "value": 1.5,
+      "source": "default"
+    },
+    "upper_straight_pockets_mm": {
+      "value": {
+        "width": 21.8,
+        "length": 43.7,
+        "front_y": -21.1,
+        "rear_y": 22.6,
+        "rear_extension": 1.5
+      },
+      "source": "default"
+    },
+    "front_alignment": {
+      "value": "黑色圆座正面与黑色下内胆前侧外表面同平面；白色环正面与白色外壳前侧外表面同平面",
+      "source": "user"
+    },
+    "white_ring_seat_mm": {
+      "value": {
+        "recess_depth": 0.4,
+        "recess_diameter": 19.4,
+        "radial_clearance": 0.2
+      },
+      "source": "default"
+    },
+    "outer_edge_rounding": {
+      "value": "进一步增大白色下外壳底边圆角和红色上外壳顶边圆角，上下对称",
+      "source": "user"
+    },
+    "outer_edge_radius_mm": {
+      "value": 6.0,
+      "source": "default"
+    },
+    "black_seam_gap_mm": {
+      "value": 0.3,
+      "source": "user"
+    },
+    "black_button_surround_mm": {
+      "value": {
+        "outer_diameter": 24,
+        "visible_radial_width": 2.5
+      },
+      "source": "default"
+    },
+    "black_surround_appearance": {
+      "value": "将外露的黑色圆环再缩小一点，保留当前灰按钮和白圈尺寸",
+      "source": "user"
+    },
+    "surround_shell_clearance_mm": {
+      "value": {
+        "cutout_radius": 12.5,
+        "radial_clearance": 0.5
+      },
+      "source": "default"
+    },
+    "first_article_plan": {
+      "value": "先小件和无胶干装，空盒20次与满14卡10次开合；同批PLA/PETG余料胶合24小时试验通过后，再胶合成品",
+      "source": "default"
+    }
+  },
+  "open_questions": []
+}

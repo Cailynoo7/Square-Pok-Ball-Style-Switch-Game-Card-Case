@@ -1,0 +1,16 @@
+size = param("case_size", 68.0)
+height = param("colour_height", 30.0)
+wall = param("shell_wall", 2.4)
+corner = param("corner_radius", 7.0)
+edge = param("edge_radius", 1.6)
+notch_r=param("button_surround_clearance_radius",13.0)
+outer = extrude(RectangleRounded(size,size,corner), height)
+outer = fillet(outer.edges().group_by(Axis.Z)[0], edge)
+outer = fillet(outer.edges().group_by(Axis.Z)[-1], 0.6)
+inner = Pos(0,0,wall)*extrude(RectangleRounded(size-2*wall,size-2*wall,corner-wall),height)
+if edge > wall:
+    inner=fillet(inner.edges().group_by(Axis.Z)[0],edge-wall)
+shell = outer-inner
+shell = shell-Pos(0,-33,34)*Rot(90,0,0)*Cylinder(notch_r,9)
+shell.color=srgb("#f0eee8")
+publish("white",shell,"白色下外壳",material="pla")

@@ -1,0 +1,138 @@
+{
+  "units": "mm",
+  "case": [
+    68,
+    68,
+    68
+  ],
+  "red_white_height": 30,
+  "black_band_height": 8,
+  "shell_thickness": 2.4,
+  "carrier_hidden_width": 62.6,
+  "shell_carrier_radial_gap": 0.3,
+  "card_nominal": [
+    21,
+    3,
+    31
+  ],
+  "card_design_envelope": [
+    21.2,
+    3.3,
+    31.2
+  ],
+  "slot": [
+    21.8,
+    3.8
+  ],
+  "columns_x": [
+    -13,
+    13
+  ],
+  "rows_y": [
+    -17.7,
+    -11.3,
+    -4.9,
+    1.5,
+    7.9,
+    14.3,
+    20.7
+  ],
+  "card_bottom_z": 14,
+  "hinge_axis": {
+    "point": [
+      0,
+      31,
+      34
+    ],
+    "direction": [
+      1,
+      0,
+      0
+    ],
+    "bore_diameter": 2.15,
+    "pin_diameter": 1.75
+  },
+  "connections": [
+    {
+      "id": "shell_carrier",
+      "implementation": "free",
+      "reason": "有曲面侧壁的嵌套结构杯胶合，不是平面薄装饰板"
+    },
+    {
+      "id": "hinge",
+      "implementation": "free",
+      "reason": "定制耗材轴和交错轴节，滑动配合"
+    },
+    {
+      "id": "push_latch",
+      "implementation": "free",
+      "reason": "PETG弹性悬臂和按钮滑动导向"
+    },
+    {
+      "id": "card_slots",
+      "implementation": "free",
+      "reason": "下槽整体后移1.5mm，配合上盖两列直壁长腔的开盖运动间隙"
+    },
+    {
+      "id": "white_ring",
+      "implementation": "free",
+      "reason": "环面接触带过窄，面板连接工具拒绝后采用free环形浅槽定位及少量胶合；白环正面与白壳齐平"
+    }
+  ],
+  "recommended_opening_deg": 100,
+  "upper_pockets": {
+    "count": 2,
+    "width": 21.8,
+    "length": 43.7,
+    "depth": 11.6,
+    "centres_x": [
+      -13,
+      13
+    ],
+    "bounds_y": [
+      -21.1,
+      22.6
+    ],
+    "front_relief_mm": 0,
+    "front_relief_shape": "无弧形退让，直壁；下槽整体后移1.5mm，上腔后缘延长1.5mm"
+  },
+  "black_band_inset_mm": 0.8,
+  "button_dimensions_mm": {
+    "diameter": 13,
+    "cap_thickness": 1.6,
+    "projection_from_shell": 1.0
+  },
+  "white_ring_mm": {
+    "outer_diameter": 19,
+    "inner_diameter": 13.6,
+    "thickness": 1.2,
+    "band_width": 2.7
+  },
+  "lower_slots_rearward_shift_mm": 1.5,
+  "front_planes_y_mm": {
+    "black_bezel_and_band": -33.2,
+    "white_ring_and_shell": -34.0,
+    "grey_button": -35.0
+  },
+  "white_ring_seat_mm": {
+    "depth": 0.4,
+    "diameter": 19.4,
+    "radial_clearance": 0.2
+  },
+  "outer_edge_radius_mm": 6,
+  "shell_inner_edge_radius_mm": 3.6,
+  "carrier_hidden_edge_radius_mm": 3.3,
+  "black_seam_gap_mm": 0.3,
+  "black_seam_faces_z_mm": {
+    "lower": 33.85,
+    "upper": 34.15
+  },
+  "black_button_surround_mm": {
+    "outer_diameter": 24,
+    "visible_radial_width": 2.5
+  },
+  "surround_shell_clearance_mm": {
+    "cutout_radius": 12.5,
+    "radial_clearance": 0.5
+  }
+}
